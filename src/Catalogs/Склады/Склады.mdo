@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab82ed9a-d98c-45a9-a1b1-bd4f4e133042">
+  <producedTypes>
+    <objectType typeId="28f6a5e4-a688-4194-b5af-f9fffb67dafc" valueTypeId="4b955535-61f7-4e16-ad3d-268b88e9a10f"/>
+    <refType typeId="46635649-b273-47a9-830c-fcbb1834fb5f" valueTypeId="4e86faae-c5d3-4ff6-85e3-a6b7deed8e55"/>
+    <selectionType typeId="8936d0ff-311a-45d2-97ad-63c2715cfb99" valueTypeId="9ca6a097-019c-4c3c-b1df-7ec1150bd5db"/>
+    <listType typeId="d7fbbc6d-ff29-4fbf-8c86-993e7597263e" valueTypeId="6fdf8675-5122-4b93-b5ad-92d6ef107502"/>
+    <managerType typeId="d3f44203-56e9-4efe-976a-94e8967949ab" valueTypeId="97504cda-4472-45dd-a920-03592a89b26a"/>
+  </producedTypes>
+  <name>Склады</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склады</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Склады.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Склады.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="4b04ff70-73bc-40dd-a7e1-237e91929dc0">
+      <name>Основной</name>
+      <description>Основной</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

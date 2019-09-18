@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6b17455-569c-49ba-9597-c0e1e5798b4f">
+  <producedTypes>
+    <refType typeId="c019814f-8a47-4742-bc44-1b95cf659940" valueTypeId="586d4d1f-43a4-4e14-93c2-eb098415f14d"/>
+    <listType typeId="0879142e-5949-4cec-b599-51171b9f2aab" valueTypeId="1580aa1e-c7a4-447e-9b01-bed17353cf3d"/>
+    <managerType typeId="8fd901a3-c745-4dc1-b1e9-c16fa9df900b" valueTypeId="89371391-4afb-46c8-a826-46a9b917f0a5"/>
+  </producedTypes>
+  <name>ВидыОперации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операции</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ad209569-8a28-48e6-9dbf-a7079ff3d1b4">
+    <name>Ремонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1b532dbd-a179-469a-9c5d-5f53fbb98788">
+    <name>Аренда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аренда</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dd6b0dee-169c-45b2-9ec4-56533fd570b4">
+    <name>Инвентаризация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инвентаризация</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

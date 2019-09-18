@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e34ff517-665e-4b15-a051-34deb11b6748">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.админ</picture>
+  </picture>
+  <content>CommonModule.РаботаСоСправочниками</content>
+  <content>Role.Полный</content>
+  <content>Role.Менеджер</content>
+  <content>Role.Склад</content>
+  <content>DataProcessor.УдалениеПомеченныхОбъектов</content>
+  <content>AccumulationRegister.ОстаткиТоваров</content>
+  <content>Report.ОстаткиНаСкладах</content>
+  <content>Report.ОтчетПоДвижению</content>
+  <content>CommonPicture.админ</content>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Покупка</subsystems>
+  <subsystems>Продажи</subsystems>
+  <subsystems>Склад</subsystems>
+  <subsystems>Прочие</subsystems>
+  <subsystems>Журналы</subsystems>
+</mdclass:Subsystem>
