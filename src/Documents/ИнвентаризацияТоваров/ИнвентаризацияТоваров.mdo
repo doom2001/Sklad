@@ -221,14 +221,16 @@
   <templates uuid="314b59ad-2689-483b-ae14-87fd70d111f0">
     <name>Печать</name>
   </templates>
-  <commands uuid="250a9f8d-aeff-4fef-a79e-349012f527b5">
+  <commands uuid="6971d3d8-78df-497b-adfc-8ac2ff338da6">
     <name>Печать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать</value>
+    </synonym>
     <group>FormCommandBarImportant</group>
     <commandParameterType>
-      <types>DocumentRef.ИнвентаризацияТоваров</types>
+      <types>DocumentRef.ПеремещениеТоваров</types>
     </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
     <representation>Auto</representation>
-    <shortcut></shortcut>
   </commands>
 </mdclass:Document>

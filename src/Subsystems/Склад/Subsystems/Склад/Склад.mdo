@@ -10,5 +10,6 @@
   <content>Document.ИнвентаризацияТоваров</content>
   <content>Document.ОприходованиеТоваров</content>
   <content>Document.СписаниеТоваров</content>
+  <content>Document.ПеремещениеТоваров</content>
   <parentSubsystem>Subsystem.Склад</parentSubsystem>
 </mdclass:Subsystem>

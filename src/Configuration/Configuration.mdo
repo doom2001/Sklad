@@ -48,9 +48,11 @@
   <documents>Document.ИнвентаризацияТоваров</documents>
   <documents>Document.ОприходованиеТоваров</documents>
   <documents>Document.СписаниеТоваров</documents>
+  <documents>Document.ПеремещениеТоваров</documents>
   <documentJournals>DocumentJournal.Продажи</documentJournals>
   <documentJournals>DocumentJournal.Закупка</documentJournals>
   <documentJournals>DocumentJournal.Инвентаризация</documentJournals>
+  <documentJournals>DocumentJournal.Перемещения</documentJournals>
   <enums>Enum.ВидыОперацийПриход</enums>
   <enums>Enum.ВидыОперацийРасход</enums>
   <reports>Report.ОстаткиНаСкладах</reports>

@@ -2,12 +2,7 @@
 <document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<languageSettings>
 		<currentLanguage>ru</currentLanguage>
-		<defaultLanguage/>
-		<languageInfo>
-			<id>#</id>
-			<code>Язык по умолчанию</code>
-			<description>Язык по умолчанию</description>
-		</languageInfo>
+		<defaultLanguage>ru</defaultLanguage>
 		<languageInfo>
 			<id>ru</id>
 			<code>Русский</code>
@@ -214,7 +209,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ед изм</v8:content>
+							<v8:content>Ед. изм</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -285,7 +280,6 @@
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>26</defaultFormatIndex>
 	<height>12</height>
-	<vgRows>12</vgRows>
 	<merge>
 		<r>3</r>
 		<c>2</c>
@@ -297,8 +291,6 @@
 			<type>Rows</type>
 			<beginRow>1</beginRow>
 			<endRow>1</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 			<columnsID>66dc8a34-3ff5-4e26-a371-805f2dafe6c2</columnsID>
 		</area>
 	</namedItem>
@@ -308,8 +300,6 @@
 			<type>Rows</type>
 			<beginRow>10</beginRow>
 			<endRow>11</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
@@ -318,8 +308,6 @@
 			<type>Rows</type>
 			<beginRow>8</beginRow>
 			<endRow>8</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 			<columnsID>7f1af90a-1749-46e1-a26d-52657477e460</columnsID>
 		</area>
 	</namedItem>
@@ -329,8 +317,6 @@
 			<type>Rows</type>
 			<beginRow>6</beginRow>
 			<endRow>7</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
@@ -339,8 +325,7 @@
 			<type>Rows</type>
 			<beginRow>3</beginRow>
 			<endRow>3</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
+			<columnsID>3e84f117-9e61-4b0e-97c0-27d90d3a93e6</columnsID>
 		</area>
 	</namedItem>
 	<line width="1" gap="false">

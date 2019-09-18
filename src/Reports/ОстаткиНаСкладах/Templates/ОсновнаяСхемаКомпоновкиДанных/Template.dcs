@@ -7,32 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>КоличествоКонечныйОстаток</dataPath>
-			<field>КоличествоКонечныйОстаток</field>
-			<role>
-				<dcscom:balance>true</dcscom:balance>
-				<dcscom:balanceGroupName>Количество</dcscom:balanceGroupName>
-				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>КоличествоНачальныйОстаток</dataPath>
-			<field>КоличествоНачальныйОстаток</field>
-			<role>
-				<dcscom:balance>true</dcscom:balance>
-				<dcscom:balanceGroupName>Количество</dcscom:balanceGroupName>
-				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>КоличествоПриход</dataPath>
-			<field>КоличествоПриход</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>КоличествоРасход</dataPath>
-			<field>КоличествоРасход</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Номенклатура</dataPath>
 			<field>Номенклатура</field>
 			<role>
@@ -46,46 +20,85 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Приход</dataPath>
+			<field>Приход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Расход</dataPath>
+			<field>Расход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачальныйОстаток</dataPath>
+			<field>НачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальный остаток</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Группа</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонечныйОстаток</dataPath>
+			<field>КонечныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конечный остаток</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Группа</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ОстаткиТоваровОстаткиИОбороты.Склад КАК Склад,
 	ОстаткиТоваровОстаткиИОбороты.Номенклатура КАК Номенклатура,
-	ОстаткиТоваровОстаткиИОбороты.КоличествоНачальныйОстаток КАК КоличествоНачальныйОстаток,
-	ОстаткиТоваровОстаткиИОбороты.КоличествоПриход КАК КоличествоПриход,
-	ОстаткиТоваровОстаткиИОбороты.КоличествоРасход КАК КоличествоРасход,
-	ОстаткиТоваровОстаткиИОбороты.КоличествоКонечныйОстаток КАК КоличествоКонечныйОстаток
-{ВЫБРАТЬ
-	Склад.*,
-	Номенклатура.*,
-	КоличествоНачальныйОстаток,
-	КоличествоПриход,
-	КоличествоРасход,
-	КоличествоКонечныйОстаток}
+	ОстаткиТоваровОстаткиИОбороты.КоличествоНачальныйОстаток КАК НачальныйОстаток,
+	ОстаткиТоваровОстаткиИОбороты.КоличествоПриход КАК Приход,
+	ОстаткиТоваровОстаткиИОбороты.КоличествоРасход КАК Расход,
+	ОстаткиТоваровОстаткиИОбороты.КоличествоКонечныйОстаток КАК КонечныйОстаток
 ИЗ
-	РегистрНакопления.ОстаткиТоваров.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода,, ДвиженияИГраницыПериода,) КАК
-		ОстаткиТоваровОстаткиИОбороты
-{ГДЕ
-	ОстаткиТоваровОстаткиИОбороты.Склад.*,
-	ОстаткиТоваровОстаткиИОбороты.Номенклатура.*}
+	РегистрНакопления.ОстаткиТоваров.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода,,,) КАК ОстаткиТоваровОстаткиИОбороты
 УПОРЯДОЧИТЬ ПО
 	Склад,
 	Номенклатура</query>
 	</dataSet>
 	<totalField>
-		<dataPath>КоличествоКонечныйОстаток</dataPath>
-		<expression>Сумма(КоличествоКонечныйОстаток)</expression>
+		<dataPath>НачальныйОстаток</dataPath>
+		<expression>Сумма(НачальныйОстаток)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>КоличествоНачальныйОстаток</dataPath>
-		<expression>Сумма(КоличествоНачальныйОстаток)</expression>
+		<dataPath>Приход</dataPath>
+		<expression>Сумма(Приход)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>КоличествоПриход</dataPath>
-		<expression>Сумма(КоличествоПриход)</expression>
+		<dataPath>Расход</dataPath>
+		<expression>Сумма(Расход)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>КоличествоРасход</dataPath>
-		<expression>Сумма(КоличествоРасход)</expression>
+		<dataPath>КонечныйОстаток</dataPath>
+		<expression>Сумма(КонечныйОстаток)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -128,34 +141,16 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Склад</dcsset:field>
+					<dcsset:field>НачальныйОстаток</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Видопераций</dcsset:field>
+					<dcsset:field>Приход</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:field>Расход</dcsset:field>
 				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Количество остаток</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>КоличествоНачальныйОстаток</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>КоличествоПриход</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>КоличествоРасход</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>КоличествоКонечныйОстаток</dcsset:field>
-					</dcsset:item>
-					<dcsset:placement>SpecialColumn</dcsset:placement>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонечныйОстаток</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:filter>
@@ -206,58 +201,35 @@
 					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
-			<dcsset:item xsi:type="dcsset:StructureItemTable">
-				<dcsset:column>
-					<dcsset:groupItems>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>ВидОпераций</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-					</dcsset:groupItems>
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-				</dcsset:column>
-				<dcsset:row>
-					<dcsset:groupItems>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Склад</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-					</dcsset:groupItems>
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-					<dcsset:item>
-						<dcsset:groupItems>
-							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Номенклатура</dcsset:field>
-								<dcsset:groupType>Items</dcsset:groupType>
-								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-							</dcsset:item>
-						</dcsset:groupItems>
-						<dcsset:order>
-							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-						</dcsset:order>
-						<dcsset:selection>
-							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-						</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Склад</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 					</dcsset:item>
-				</dcsset:row>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>
