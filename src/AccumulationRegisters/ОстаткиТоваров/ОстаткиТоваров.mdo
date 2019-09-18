@@ -103,20 +103,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
-  <dimensions uuid="46598a9d-6bec-4fe8-87e4-54e69108aa8c">
-    <name>ВидОпераций</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вид операций</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ВидыОперации</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
   <forms uuid="afb04165-7036-4376-8ac9-56741e2f0264">
     <name>ФормаСписка</name>
     <synonym>

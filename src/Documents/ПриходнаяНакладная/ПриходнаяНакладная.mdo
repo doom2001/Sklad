@@ -139,17 +139,28 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="7fc05b6d-d2b6-494a-9e02-6e47624c93b9">
-    <name>ВидОпераций</name>
+    <name>ВидОперации</name>
     <synonym>
       <key>ru</key>
-      <value>Вид операций</value>
+      <value>Вид операции</value>
     </synonym>
     <type>
-      <types>EnumRef.ВидыОперации</types>
+      <types>EnumRef.ВидыОперацийПриход</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d75dcfc2-e9ac-498c-aeaa-3e8859d6c9bc">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

@@ -42,6 +42,7 @@
   <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.Склады</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
   <documents>Document.ПриходнаяНакладная</documents>
   <documents>Document.РасходнаяНакладная</documents>
   <documents>Document.ИнвентаризацияТоваров</documents>
@@ -50,7 +51,8 @@
   <documentJournals>DocumentJournal.Продажи</documentJournals>
   <documentJournals>DocumentJournal.Закупка</documentJournals>
   <documentJournals>DocumentJournal.Инвентаризация</documentJournals>
-  <enums>Enum.ВидыОперации</enums>
+  <enums>Enum.ВидыОперацийПриход</enums>
+  <enums>Enum.ВидыОперацийРасход</enums>
   <reports>Report.ОстаткиНаСкладах</reports>
   <reports>Report.ОтчетПоДвижению</reports>
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>

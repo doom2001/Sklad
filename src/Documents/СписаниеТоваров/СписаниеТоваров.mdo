@@ -119,6 +119,18 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="0a93012e-4a46-4bef-9dc8-2ca095748ea0">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОперацийРасход</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="7fa70399-8321-49ca-b5fc-8a6b0c42c852">
     <name>ФормаДокумента</name>
     <synonym>
@@ -199,20 +211,6 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="e06be84c-5567-48ad-83b4-a706a425e960">
-      <name>ВидОпераций</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид операций</value>
-      </synonym>
-      <type>
-        <types>EnumRef.ВидыОперации</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
