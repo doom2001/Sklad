@@ -631,10 +631,6 @@
       <event>ChoiceProcessing</event>
       <name>ТоварыОбработкаВыбора</name>
     </handlers>
-    <handlers>
-      <event>AfterDeleteRow</event>
-      <name>ТоварыПослеУдаления</name>
-    </handlers>
     <searchStringAddition>
       <visible>true</visible>
       <enabled>true</enabled>
