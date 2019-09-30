@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad795603-0c1d-4101-88b1-324a10509df9">
-  <name>склад</name>
-  <synonym>
-    <key>ru</key>
-    <value>Склад</value>
-  </synonym>
+<mdclass:CommonPicture
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="ad795603-0c1d-4101-88b1-324a10509df9">
+	<name>склад</name>
+	<synonym>
+		<key>ru</key>
+		<value>Склад</value>
+	</synonym>
 </mdclass:CommonPicture>

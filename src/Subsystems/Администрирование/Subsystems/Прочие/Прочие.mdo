@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e16276be-31e1-4fdd-af44-69f50fa41b6b">
-  <name>Прочие</name>
-  <synonym>
-    <key>ru</key>
-    <value>Прочие</value>
-  </synonym>
-  <includeHelpInContents>true</includeHelpInContents>
-  <includeInCommandInterface>true</includeInCommandInterface>
-  <content>DataProcessor.УдалениеПомеченныхОбъектов</content>
-  <content>AccumulationRegister.ОстаткиТоваров</content>
-  <content>3514a7f9-1ab3-48d6-9cdc-486b77ed7b25</content>
-  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+<mdclass:Subsystem
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="e16276be-31e1-4fdd-af44-69f50fa41b6b">
+	<name>Прочие</name>
+	<synonym>
+		<key>ru</key>
+		<value>Прочие</value>
+	</synonym>
+	<includeHelpInContents>true</includeHelpInContents>
+	<includeInCommandInterface>true</includeInCommandInterface>
+	<content>DataProcessor.УдалениеПомеченныхОбъектов</content>
+	<content>AccumulationRegister.ОстаткиТоваров</content>
+	<content>3514a7f9-1ab3-48d6-9cdc-486b77ed7b25</content>
+	<parentSubsystem>Subsystem.Администрирование</parentSubsystem>
 </mdclass:Subsystem>

@@ -1,231 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78bd1a87-fcab-4d4b-9002-475fc87c916f">
-  <producedTypes>
-    <objectType typeId="eff94693-1a05-4470-9f94-2acfb1afbdde" valueTypeId="93e57c22-8510-4a26-876f-467f137e696f"/>
-    <refType typeId="7bc780f8-2801-4788-82f6-7b3439b6cbe5" valueTypeId="399017b1-5e68-4ffb-9a6f-9d99daff50a0"/>
-    <selectionType typeId="171fa9ad-b29d-45dc-abcd-040463fa8f48" valueTypeId="937567c5-c436-4184-b212-d77319fe9e0b"/>
-    <listType typeId="e648af9a-1ba1-408f-958b-9ba0a204f2a5" valueTypeId="0d13b98b-1569-4b66-b435-00b44fabfa43"/>
-    <managerType typeId="19debe30-04e1-43ce-ae19-7668ad653307" valueTypeId="20b94aa6-98f4-4b46-b484-497ad6f44a4f"/>
-  </producedTypes>
-  <name>ОприходованиеТоваров</name>
-  <synonym>
-    <key>ru</key>
-    <value>Оприходование товаров</value>
-  </synonym>
-  <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ОприходованиеТоваров.StandardAttribute.Number</inputByString>
-  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Posted</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Ref</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>DeletionMark</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Date</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Number</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <basedOn>Document.ИнвентаризацияТоваров</basedOn>
-  <createOnInput>Use</createOnInput>
-  <dataLockControlMode>Managed</dataLockControlMode>
-  <fullTextSearch>Use</fullTextSearch>
-  <numberType>String</numberType>
-  <numberLength>9</numberLength>
-  <numberAllowedLength>Variable</numberAllowedLength>
-  <checkUnique>true</checkUnique>
-  <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ОприходованиеТоваров.Form.ФормаДокумента</defaultObjectForm>
-  <defaultListForm>Document.ОприходованиеТоваров.Form.ФормаСписка</defaultListForm>
-  <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
-  <postInPrivilegedMode>true</postInPrivilegedMode>
-  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="a082bc82-cc63-4858-9e84-6dc38bfc4798">
-    <name>Склад</name>
-    <synonym>
-      <key>ru</key>
-      <value>Склад</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Склады</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="1096831f-f558-4807-ab98-cb75dfceecec">
-    <name>Комментарий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Комментарий</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="cb19e3c0-8c76-4238-a54e-c32649b31ad5">
-    <name>Ответственный</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ответственный</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Пользователи</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="b8f6d371-034a-4fb8-a562-8bdac39940ca">
-    <name>ВидОперации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вид операции</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ВидыОперацийПриход</types>
-    </type>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="22c3047b-eb80-47dd-ac02-0b403dc93b1b">
-    <name>ФормаДокумента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма документа</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="57409ac9-3977-4f79-91f1-0cb422afa499">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <tabularSections uuid="8ccf87a6-6bea-495c-be82-bbfee6b7915d">
-    <producedTypes>
-      <objectType typeId="2f074f01-53b7-4515-9964-5621f4c35327" valueTypeId="880940a8-e25b-4cab-aff2-6cbb12ea8cfa"/>
-      <rowType typeId="2c9114e5-4701-4a37-ab1f-325d670569f4" valueTypeId="17ef156c-37a3-4337-925f-56fcb24e5c3b"/>
-    </producedTypes>
-    <name>Товары</name>
-    <synonym>
-      <key>ru</key>
-      <value>Товары</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="dbb17fdd-653f-4423-ad15-6d729a5b750c">
-      <name>Номенклатура</name>
-      <synonym>
-        <key>ru</key>
-        <value>Номенклатура</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Номенклатура</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="bfb9b6b7-6c80-4eff-be89-4607c8e5a8b9">
-      <name>ЕдИзм</name>
-      <synonym>
-        <key>ru</key>
-        <value>Ед изм</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ЕдиницыИзмерения</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="4f99ec45-bd2b-4b38-bcc8-b211f2b72a12">
-      <name>Количество</name>
-      <synonym>
-        <key>ru</key>
-        <value>Количество</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <templates uuid="69bf9a50-74e6-4fc3-9236-45b4ac12f1e9">
-    <name>Печать</name>
-  </templates>
-  <commands uuid="18d0dc1c-66b1-4c21-bd50-02c698676728">
-    <name>Печать</name>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.ОприходованиеТоваров</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-    <shortcut></shortcut>
-  </commands>
+<mdclass:Document
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:core="http://g5.1c.ru/v8/dt/mcore"
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="78bd1a87-fcab-4d4b-9002-475fc87c916f">
+	<producedTypes>
+		<objectType typeId="eff94693-1a05-4470-9f94-2acfb1afbdde"
+			valueTypeId="93e57c22-8510-4a26-876f-467f137e696f" />
+		<refType typeId="7bc780f8-2801-4788-82f6-7b3439b6cbe5"
+			valueTypeId="399017b1-5e68-4ffb-9a6f-9d99daff50a0" />
+		<selectionType
+			typeId="171fa9ad-b29d-45dc-abcd-040463fa8f48"
+			valueTypeId="937567c5-c436-4184-b212-d77319fe9e0b" />
+		<listType typeId="e648af9a-1ba1-408f-958b-9ba0a204f2a5"
+			valueTypeId="0d13b98b-1569-4b66-b435-00b44fabfa43" />
+		<managerType typeId="19debe30-04e1-43ce-ae19-7668ad653307"
+			valueTypeId="20b94aa6-98f4-4b46-b484-497ad6f44a4f" />
+	</producedTypes>
+	<name>ОприходованиеТоваров</name>
+	<synonym>
+		<key>ru</key>
+		<value>Оприходование товаров</value>
+	</synonym>
+	<useStandardCommands>true</useStandardCommands>
+	<inputByString>Document.ОприходованиеТоваров.StandardAttribute.Number</inputByString>
+	<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+	<standardAttributes>
+		<dataHistory>Use</dataHistory>
+		<name>Posted</name>
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fullTextSearch>Use</fullTextSearch>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+	</standardAttributes>
+	<standardAttributes>
+		<dataHistory>Use</dataHistory>
+		<name>Ref</name>
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fullTextSearch>Use</fullTextSearch>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+	</standardAttributes>
+	<standardAttributes>
+		<dataHistory>Use</dataHistory>
+		<name>DeletionMark</name>
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fullTextSearch>Use</fullTextSearch>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+	</standardAttributes>
+	<standardAttributes>
+		<dataHistory>Use</dataHistory>
+		<name>Date</name>
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fillChecking>ShowError</fillChecking>
+		<fullTextSearch>Use</fullTextSearch>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+	</standardAttributes>
+	<standardAttributes>
+		<dataHistory>Use</dataHistory>
+		<name>Number</name>
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fullTextSearch>Use</fullTextSearch>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+	</standardAttributes>
+	<basedOn>Document.ИнвентаризацияТоваров</basedOn>
+	<createOnInput>Use</createOnInput>
+	<dataLockControlMode>Managed</dataLockControlMode>
+	<fullTextSearch>Use</fullTextSearch>
+	<numberType>String</numberType>
+	<numberLength>9</numberLength>
+	<numberAllowedLength>Variable</numberAllowedLength>
+	<checkUnique>true</checkUnique>
+	<autonumbering>true</autonumbering>
+	<defaultObjectForm>Document.ОприходованиеТоваров.Form.ФормаДокумента</defaultObjectForm>
+	<defaultListForm>Document.ОприходованиеТоваров.Form.ФормаСписка</defaultListForm>
+	<registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
+	<postInPrivilegedMode>true</postInPrivilegedMode>
+	<unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+	<attributes uuid="a082bc82-cc63-4858-9e84-6dc38bfc4798">
+		<name>Склад</name>
+		<synonym>
+			<key>ru</key>
+			<value>Склад</value>
+		</synonym>
+		<type>
+			<types>CatalogRef.Склады</types>
+		</type>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+		<fillChecking>ShowError</fillChecking>
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fullTextSearch>Use</fullTextSearch>
+		<dataHistory>Use</dataHistory>
+	</attributes>
+	<attributes uuid="1096831f-f558-4807-ab98-cb75dfceecec">
+		<name>Комментарий</name>
+		<synonym>
+			<key>ru</key>
+			<value>Комментарий</value>
+		</synonym>
+		<type>
+			<types>String</types>
+			<stringQualifiers />
+		</type>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+		<fillValue xsi:type="core:StringValue">
+			<value></value>
+		</fillValue>
+		<fullTextSearch>Use</fullTextSearch>
+		<dataHistory>Use</dataHistory>
+	</attributes>
+	<attributes uuid="cb19e3c0-8c76-4238-a54e-c32649b31ad5">
+		<name>Ответственный</name>
+		<synonym>
+			<key>ru</key>
+			<value>Ответственный</value>
+		</synonym>
+		<type>
+			<types>CatalogRef.Пользователи</types>
+		</type>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fullTextSearch>Use</fullTextSearch>
+		<dataHistory>Use</dataHistory>
+	</attributes>
+	<attributes uuid="b8f6d371-034a-4fb8-a562-8bdac39940ca">
+		<name>ВидОперации</name>
+		<synonym>
+			<key>ru</key>
+			<value>Вид операции</value>
+		</synonym>
+		<type>
+			<types>EnumRef.ВидыОперацийПриход</types>
+		</type>
+		<fullTextSearch>Use</fullTextSearch>
+		<dataHistory>Use</dataHistory>
+	</attributes>
+	<forms uuid="22c3047b-eb80-47dd-ac02-0b403dc93b1b">
+		<name>ФормаДокумента</name>
+		<synonym>
+			<key>ru</key>
+			<value>Форма документа</value>
+		</synonym>
+		<usePurposes>PersonalComputer</usePurposes>
+		<usePurposes>MobileDevice</usePurposes>
+	</forms>
+	<forms uuid="57409ac9-3977-4f79-91f1-0cb422afa499">
+		<name>ФормаСписка</name>
+		<synonym>
+			<key>ru</key>
+			<value>Форма списка</value>
+		</synonym>
+		<usePurposes>PersonalComputer</usePurposes>
+		<usePurposes>MobileDevice</usePurposes>
+	</forms>
+	<tabularSections
+		uuid="8ccf87a6-6bea-495c-be82-bbfee6b7915d">
+		<producedTypes>
+			<objectType typeId="2f074f01-53b7-4515-9964-5621f4c35327"
+				valueTypeId="880940a8-e25b-4cab-aff2-6cbb12ea8cfa" />
+			<rowType typeId="2c9114e5-4701-4a37-ab1f-325d670569f4"
+				valueTypeId="17ef156c-37a3-4337-925f-56fcb24e5c3b" />
+		</producedTypes>
+		<name>Товары</name>
+		<synonym>
+			<key>ru</key>
+			<value>Товары</value>
+		</synonym>
+		<standardAttributes>
+			<dataHistory>Use</dataHistory>
+			<name>LineNumber</name>
+			<fillValue xsi:type="core:UndefinedValue" />
+			<fullTextSearch>Use</fullTextSearch>
+			<minValue xsi:type="core:UndefinedValue" />
+			<maxValue xsi:type="core:UndefinedValue" />
+		</standardAttributes>
+		<attributes uuid="dbb17fdd-653f-4423-ad15-6d729a5b750c">
+			<name>Номенклатура</name>
+			<synonym>
+				<key>ru</key>
+				<value>Номенклатура</value>
+			</synonym>
+			<type>
+				<types>CatalogRef.Номенклатура</types>
+			</type>
+			<minValue xsi:type="core:UndefinedValue" />
+			<maxValue xsi:type="core:UndefinedValue" />
+			<dataHistory>Use</dataHistory>
+			<fullTextSearch>Use</fullTextSearch>
+		</attributes>
+		<attributes uuid="bfb9b6b7-6c80-4eff-be89-4607c8e5a8b9">
+			<name>ЕдИзм</name>
+			<synonym>
+				<key>ru</key>
+				<value>Ед изм</value>
+			</synonym>
+			<type>
+				<types>CatalogRef.ЕдиницыИзмерения</types>
+			</type>
+			<minValue xsi:type="core:UndefinedValue" />
+			<maxValue xsi:type="core:UndefinedValue" />
+			<dataHistory>Use</dataHistory>
+			<fullTextSearch>Use</fullTextSearch>
+		</attributes>
+		<attributes uuid="4f99ec45-bd2b-4b38-bcc8-b211f2b72a12">
+			<name>Количество</name>
+			<synonym>
+				<key>ru</key>
+				<value>Количество</value>
+			</synonym>
+			<type>
+				<types>Number</types>
+				<numberQualifiers>
+					<precision>10</precision>
+					<scale>2</scale>
+				</numberQualifiers>
+			</type>
+			<minValue xsi:type="core:UndefinedValue" />
+			<maxValue xsi:type="core:UndefinedValue" />
+			<fillChecking>ShowError</fillChecking>
+			<dataHistory>Use</dataHistory>
+			<fullTextSearch>Use</fullTextSearch>
+		</attributes>
+	</tabularSections>
+	<templates uuid="69bf9a50-74e6-4fc3-9236-45b4ac12f1e9">
+		<name>Печать</name>
+	</templates>
+	<commands uuid="18d0dc1c-66b1-4c21-bd50-02c698676728">
+		<name>Печать</name>
+		<group>FormCommandBarImportant</group>
+		<commandParameterType>
+			<types>DocumentRef.ОприходованиеТоваров</types>
+		</commandParameterType>
+		<parameterUseMode>Multiple</parameterUseMode>
+		<representation>Auto</representation>
+		<shortcut></shortcut>
+	</commands>
 </mdclass:Document>

@@ -1,52 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3f88648-58e3-4aa4-877a-e112e1787a05">
-  <producedTypes>
-    <objectType typeId="9c879187-b0e6-4117-8100-b987857ffe89" valueTypeId="b92bc54b-d863-4660-8a0c-2ae112b13408"/>
-    <refType typeId="22a3923f-b386-466f-b2c0-9784d35ce9b0" valueTypeId="2de19971-ef20-411c-b113-e4f214ce54a3"/>
-    <selectionType typeId="d0841346-3640-4dde-a501-9ade4e5797a7" valueTypeId="50706e6c-bbca-408a-a5f5-a9c19ffac3b6"/>
-    <listType typeId="6b5c9dbb-3675-4be5-b825-154ead4e1515" valueTypeId="15809b09-4dea-4d7b-b890-acb48ed89004"/>
-    <managerType typeId="716b27d9-c512-4327-a692-04c55ea1e28b" valueTypeId="23ae0dc8-2b3d-4106-8970-2da5b495cc9e"/>
-  </producedTypes>
-  <name>ЕдиницыИзмерения</name>
-  <synonym>
-    <key>ru</key>
-    <value>Единицы измерения</value>
-  </synonym>
-  <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Description</inputByString>
-  <inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Code</inputByString>
-  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
-  <createOnInput>Use</createOnInput>
-  <dataLockControlMode>Managed</dataLockControlMode>
-  <fullTextSearch>Use</fullTextSearch>
-  <levelCount>2</levelCount>
-  <foldersOnTop>true</foldersOnTop>
-  <codeLength>9</codeLength>
-  <descriptionLength>50</descriptionLength>
-  <codeType>String</codeType>
-  <codeAllowedLength>Variable</codeAllowedLength>
-  <checkUnique>true</checkUnique>
-  <autonumbering>true</autonumbering>
-  <defaultPresentation>AsDescription</defaultPresentation>
-  <editType>InDialog</editType>
-  <choiceMode>BothWays</choiceMode>
-  <attributes uuid="0a12e05a-384d-4cfb-b6e2-9c0f666eda42">
-    <name>Коэффициент</name>
-    <synonym>
-      <key>ru</key>
-      <value>Коэффициент</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+<mdclass:Catalog
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:core="http://g5.1c.ru/v8/dt/mcore"
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="e3f88648-58e3-4aa4-877a-e112e1787a05">
+	<producedTypes>
+		<objectType typeId="9c879187-b0e6-4117-8100-b987857ffe89"
+			valueTypeId="b92bc54b-d863-4660-8a0c-2ae112b13408" />
+		<refType typeId="22a3923f-b386-466f-b2c0-9784d35ce9b0"
+			valueTypeId="2de19971-ef20-411c-b113-e4f214ce54a3" />
+		<selectionType
+			typeId="d0841346-3640-4dde-a501-9ade4e5797a7"
+			valueTypeId="50706e6c-bbca-408a-a5f5-a9c19ffac3b6" />
+		<listType typeId="6b5c9dbb-3675-4be5-b825-154ead4e1515"
+			valueTypeId="15809b09-4dea-4d7b-b890-acb48ed89004" />
+		<managerType typeId="716b27d9-c512-4327-a692-04c55ea1e28b"
+			valueTypeId="23ae0dc8-2b3d-4106-8970-2da5b495cc9e" />
+	</producedTypes>
+	<name>ЕдиницыИзмерения</name>
+	<synonym>
+		<key>ru</key>
+		<value>Единицы измерения</value>
+	</synonym>
+	<useStandardCommands>true</useStandardCommands>
+	<inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Description</inputByString>
+	<inputByString>Catalog.ЕдиницыИзмерения.StandardAttribute.Code</inputByString>
+	<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+	<createOnInput>Use</createOnInput>
+	<dataLockControlMode>Managed</dataLockControlMode>
+	<fullTextSearch>Use</fullTextSearch>
+	<levelCount>2</levelCount>
+	<foldersOnTop>true</foldersOnTop>
+	<codeLength>9</codeLength>
+	<descriptionLength>50</descriptionLength>
+	<codeType>String</codeType>
+	<codeAllowedLength>Variable</codeAllowedLength>
+	<checkUnique>true</checkUnique>
+	<autonumbering>true</autonumbering>
+	<defaultPresentation>AsDescription</defaultPresentation>
+	<editType>InDialog</editType>
+	<choiceMode>BothWays</choiceMode>
+	<attributes uuid="0a12e05a-384d-4cfb-b6e2-9c0f666eda42">
+		<name>Коэффициент</name>
+		<synonym>
+			<key>ru</key>
+			<value>Коэффициент</value>
+		</synonym>
+		<type>
+			<types>Number</types>
+			<numberQualifiers>
+				<precision>5</precision>
+				<scale>2</scale>
+			</numberQualifiers>
+		</type>
+		<minValue xsi:type="core:UndefinedValue" />
+		<maxValue xsi:type="core:UndefinedValue" />
+		<fillValue xsi:type="core:UndefinedValue" />
+		<fullTextSearch>Use</fullTextSearch>
+		<dataHistory>Use</dataHistory>
+	</attributes>
 </mdclass:Catalog>

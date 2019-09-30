@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="286cd2bd-43f5-4ba3-a0ad-f4d66cc83678">
-  <name>ПриходнаяНакладная</name>
+<mdclass:CommonTemplate
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="286cd2bd-43f5-4ba3-a0ad-f4d66cc83678">
+	<name>ПриходнаяНакладная</name>
 </mdclass:CommonTemplate>

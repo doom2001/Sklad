@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8566398-7e87-49e0-b5c2-e00c526707ba">
-  <producedTypes>
-    <objectType typeId="bf100d45-33f4-4668-af87-bbcabd071e1b" valueTypeId="e61ef1d3-d300-45db-ae3a-6431a357fa7f"/>
-    <managerType typeId="b51ec18d-ecee-4bb2-8552-ec31a8b8c565" valueTypeId="0f781040-ea66-45e1-ae87-760fb0487fd7"/>
-  </producedTypes>
-  <name>УдалениеПомеченныхОбъектов</name>
-  <synonym>
-    <key>ru</key>
-    <value>Удаление помеченных объектов</value>
-  </synonym>
-  <comment>Поиск и удаление объектов, помеченных на удаление</comment>
-  <useStandardCommands>true</useStandardCommands>
-  <defaultForm>DataProcessor.УдалениеПомеченныхОбъектов.Form.ОсновнаяФорма</defaultForm>
-  <help>
-    <pages>
-      <lang>ru</lang>
-    </pages>
-  </help>
-  <forms uuid="dd9f6f10-102f-4b5e-8863-3f1607b5c47d">
-    <name>ОсновнаяФорма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удаление помеченных объектов</value>
-    </synonym>
-    <includeHelpInContents>true</includeHelpInContents>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
+<mdclass:DataProcessor
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="c8566398-7e87-49e0-b5c2-e00c526707ba">
+	<producedTypes>
+		<objectType typeId="bf100d45-33f4-4668-af87-bbcabd071e1b"
+			valueTypeId="e61ef1d3-d300-45db-ae3a-6431a357fa7f" />
+		<managerType typeId="b51ec18d-ecee-4bb2-8552-ec31a8b8c565"
+			valueTypeId="0f781040-ea66-45e1-ae87-760fb0487fd7" />
+	</producedTypes>
+	<name>УдалениеПомеченныхОбъектов</name>
+	<synonym>
+		<key>ru</key>
+		<value>Удаление помеченных объектов</value>
+	</synonym>
+	<comment>Поиск и удаление объектов, помеченных на удаление</comment>
+	<useStandardCommands>true</useStandardCommands>
+	<defaultForm>DataProcessor.УдалениеПомеченныхОбъектов.Form.ОсновнаяФорма</defaultForm>
+	<help>
+		<pages>
+			<lang>ru</lang>
+		</pages>
+	</help>
+	<forms uuid="dd9f6f10-102f-4b5e-8863-3f1607b5c47d">
+		<name>ОсновнаяФорма</name>
+		<synonym>
+			<key>ru</key>
+			<value>Удаление помеченных объектов</value>
+		</synonym>
+		<includeHelpInContents>true</includeHelpInContents>
+		<usePurposes>PersonalComputer</usePurposes>
+		<usePurposes>MobileDevice</usePurposes>
+	</forms>
 </mdclass:DataProcessor>

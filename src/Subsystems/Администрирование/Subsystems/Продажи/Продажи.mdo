@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6a7c28c-adcd-471d-87b5-81fd729de2b1">
-  <name>Продажи</name>
-  <synonym>
-    <key>ru</key>
-    <value>Отгрузка товаров</value>
-  </synonym>
-  <includeHelpInContents>true</includeHelpInContents>
-  <includeInCommandInterface>true</includeInCommandInterface>
-  <content>Document.РасходнаяНакладная</content>
-  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+<mdclass:Subsystem
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="f6a7c28c-adcd-471d-87b5-81fd729de2b1">
+	<name>Продажи</name>
+	<synonym>
+		<key>ru</key>
+		<value>Отгрузка товаров</value>
+	</synonym>
+	<includeHelpInContents>true</includeHelpInContents>
+	<includeInCommandInterface>true</includeInCommandInterface>
+	<content>Document.РасходнаяНакладная</content>
+	<parentSubsystem>Subsystem.Администрирование</parentSubsystem>
 </mdclass:Subsystem>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfa5068a-86b3-43cf-85fa-76cfd0373062">
-  <name>Принтер128</name>
-  <synonym>
-    <key>ru</key>
-    <value>Принтер128</value>
-  </synonym>
+<mdclass:CommonPicture
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="dfa5068a-86b3-43cf-85fa-76cfd0373062">
+	<name>Принтер128</name>
+	<synonym>
+		<key>ru</key>
+		<value>Принтер128</value>
+	</synonym>
 </mdclass:CommonPicture>

@@ -1,72 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcc10774-f8e1-4ea6-9705-e6d0a75cd4e5">
-  <name>СкладскойУчет</name>
-  <synonym>
-    <key>ru</key>
-    <value>Складской учет</value>
-  </synonym>
-  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f4404626-be64-4506-86c4-f87de55d5a7e"/>
-  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="14547fad-9695-4476-b055-36f007ca498b"/>
-  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="43583e5c-2442-48dd-9ae1-1cda3dd4146f"/>
-  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="c020c1d3-c6d8-4871-ae4e-6265b79c8035"/>
-  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="9f0da1a9-1d91-45f3-b87b-3d5e805c4c9b"/>
-  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="1d582d68-7d12-431b-b74a-16104542b4c1"/>
-  <configurationExtensionCompatibilityMode>8.3.12</configurationExtensionCompatibilityMode>
-  <defaultRunMode>ManagedApplication</defaultRunMode>
-  <usePurposes>PersonalComputer</usePurposes>
-  <scriptVariant>Russian</scriptVariant>
-  <defaultLanguage>Language.Русский</defaultLanguage>
-  <dataLockControlMode>Managed</dataLockControlMode>
-  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
-  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.12</compatibilityMode>
-  <languages uuid="748b2e42-e2f3-4a8d-8b02-f9c7d3e5e244">
-    <name>Русский</name>
-    <synonym>
-      <key>ru</key>
-      <value>Русский</value>
-    </synonym>
-    <languageCode>ru</languageCode>
-  </languages>
-  <subsystems>Subsystem.Администрирование</subsystems>
-  <subsystems>Subsystem.Склад</subsystems>
-  <commonPictures>CommonPicture.склад</commonPictures>
-  <commonPictures>CommonPicture.админ</commonPictures>
-  <commonPictures>CommonPicture.Принтер128</commonPictures>
-  <commonPictures>CommonPicture.Принтер32</commonPictures>
-  <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
-  <roles>Role.Полный</roles>
-  <roles>Role.Менеджер</roles>
-  <roles>Role.Склад</roles>
-  <commonTemplates>CommonTemplate.РасходнаяНакладная</commonTemplates>
-  <commonTemplates>CommonTemplate.ПриходнаяНакладная</commonTemplates>
-  <commonModules>CommonModule.РаботаСоСправочниками</commonModules>
-  <commonModules>CommonModule.ПолныеПрава</commonModules>
-  <commonModules>CommonModule.ПроцедурыПечати</commonModules>
-  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
-  <eventSubscriptions>EventSubscription.ДокументПередЗаписью</eventSubscriptions>
-  <commonCommands>CommonCommand.Печать</commonCommands>
-  <commonForms>CommonForm.ФормаВыбораПечатнойФормы</commonForms>
-  <commonForms>CommonForm.ФормаПечати</commonForms>
-  <catalogs>Catalog.Номенклатура</catalogs>
-  <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
-  <catalogs>Catalog.Склады</catalogs>
-  <catalogs>Catalog.Пользователи</catalogs>
-  <catalogs>Catalog.Контрагенты</catalogs>
-  <documents>Document.ПриходнаяНакладная</documents>
-  <documents>Document.РасходнаяНакладная</documents>
-  <documents>Document.ИнвентаризацияТоваров</documents>
-  <documents>Document.ОприходованиеТоваров</documents>
-  <documents>Document.СписаниеТоваров</documents>
-  <documents>Document.ПеремещениеТоваров</documents>
-  <documentJournals>DocumentJournal.Продажи</documentJournals>
-  <documentJournals>DocumentJournal.Закупка</documentJournals>
-  <documentJournals>DocumentJournal.Инвентаризация</documentJournals>
-  <documentJournals>DocumentJournal.Перемещения</documentJournals>
-  <enums>Enum.ВидыОперацийПриход</enums>
-  <enums>Enum.ВидыОперацийРасход</enums>
-  <reports>Report.ОстаткиНаСкладах</reports>
-  <reports>Report.ОтчетПоДвижению</reports>
-  <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
-  <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
+<mdclass:Configuration
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="bcc10774-f8e1-4ea6-9705-e6d0a75cd4e5">
+	<name>СкладскойУчет</name>
+	<synonym>
+		<key>ru</key>
+		<value>Складской учет</value>
+	</synonym>
+	<containedObjects
+		classId="9cd510cd-abfc-11d4-9434-004095e12fc7"
+		objectId="f4404626-be64-4506-86c4-f87de55d5a7e" />
+	<containedObjects
+		classId="9fcd25a0-4822-11d4-9414-008048da11f9"
+		objectId="14547fad-9695-4476-b055-36f007ca498b" />
+	<containedObjects
+		classId="e3687481-0a87-462c-a166-9f34594f9bba"
+		objectId="43583e5c-2442-48dd-9ae1-1cda3dd4146f" />
+	<containedObjects
+		classId="9de14907-ec23-4a07-96f0-85521cb6b53b"
+		objectId="c020c1d3-c6d8-4871-ae4e-6265b79c8035" />
+	<containedObjects
+		classId="51f2d5d8-ea4d-4064-8892-82951750031e"
+		objectId="9f0da1a9-1d91-45f3-b87b-3d5e805c4c9b" />
+	<containedObjects
+		classId="e68182ea-4237-4383-967f-90c1e3370bc7"
+		objectId="1d582d68-7d12-431b-b74a-16104542b4c1" />
+	<configurationExtensionCompatibilityMode>8.3.12</configurationExtensionCompatibilityMode>
+	<defaultRunMode>ManagedApplication</defaultRunMode>
+	<usePurposes>PersonalComputer</usePurposes>
+	<scriptVariant>Russian</scriptVariant>
+	<defaultLanguage>Language.Русский</defaultLanguage>
+	<dataLockControlMode>Managed</dataLockControlMode>
+	<objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+	<interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+	<compatibilityMode>8.3.12</compatibilityMode>
+	<languages uuid="748b2e42-e2f3-4a8d-8b02-f9c7d3e5e244">
+		<name>Русский</name>
+		<synonym>
+			<key>ru</key>
+			<value>Русский</value>
+		</synonym>
+		<languageCode>ru</languageCode>
+	</languages>
+	<subsystems>Subsystem.Администрирование</subsystems>
+	<subsystems>Subsystem.Склад</subsystems>
+	<commonPictures>CommonPicture.склад</commonPictures>
+	<commonPictures>CommonPicture.админ</commonPictures>
+	<commonPictures>CommonPicture.Принтер128</commonPictures>
+	<commonPictures>CommonPicture.Принтер32</commonPictures>
+	<sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
+	<roles>Role.Полный</roles>
+	<roles>Role.Менеджер</roles>
+	<roles>Role.Склад</roles>
+	<commonTemplates>CommonTemplate.РасходнаяНакладная</commonTemplates>
+	<commonTemplates>CommonTemplate.ПриходнаяНакладная</commonTemplates>
+	<commonModules>CommonModule.РаботаСоСправочниками</commonModules>
+	<commonModules>CommonModule.ПолныеПрава</commonModules>
+	<commonModules>CommonModule.ПроцедурыПечати</commonModules>
+	<commonModules>CommonModule.ОбщегоНазначения</commonModules>
+	<eventSubscriptions>EventSubscription.ДокументПередЗаписью</eventSubscriptions>
+	<commonCommands>CommonCommand.Печать</commonCommands>
+	<commonForms>CommonForm.ФормаВыбораПечатнойФормы</commonForms>
+	<commonForms>CommonForm.ФормаПечати</commonForms>
+	<catalogs>Catalog.Номенклатура</catalogs>
+	<catalogs>Catalog.ЕдиницыИзмерения</catalogs>
+	<catalogs>Catalog.Склады</catalogs>
+	<catalogs>Catalog.Пользователи</catalogs>
+	<catalogs>Catalog.Контрагенты</catalogs>
+	<documents>Document.ПриходнаяНакладная</documents>
+	<documents>Document.РасходнаяНакладная</documents>
+	<documents>Document.ИнвентаризацияТоваров</documents>
+	<documents>Document.ОприходованиеТоваров</documents>
+	<documents>Document.СписаниеТоваров</documents>
+	<documents>Document.ПеремещениеТоваров</documents>
+	<documentJournals>DocumentJournal.Продажи</documentJournals>
+	<documentJournals>DocumentJournal.Закупка</documentJournals>
+	<documentJournals>DocumentJournal.Инвентаризация</documentJournals>
+	<documentJournals>DocumentJournal.Перемещения</documentJournals>
+	<enums>Enum.ВидыОперацийПриход</enums>
+	<enums>Enum.ВидыОперацийРасход</enums>
+	<reports>Report.ОстаткиНаСкладах</reports>
+	<reports>Report.ОтчетПоДвижению</reports>
+	<dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
+	<accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
 </mdclass:Configuration>

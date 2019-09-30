@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f43bac7e-faa9-4083-8415-0028c92ba1df">
-  <name>Журналы</name>
-  <synonym>
-    <key>ru</key>
-    <value>Журналы</value>
-  </synonym>
-  <includeHelpInContents>true</includeHelpInContents>
-  <includeInCommandInterface>true</includeInCommandInterface>
-  <content>DocumentJournal.Продажи</content>
-  <content>DocumentJournal.Закупка</content>
-  <content>DocumentJournal.Инвентаризация</content>
-  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+<mdclass:Subsystem
+	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
+	uuid="f43bac7e-faa9-4083-8415-0028c92ba1df">
+	<name>Журналы</name>
+	<synonym>
+		<key>ru</key>
+		<value>Журналы</value>
+	</synonym>
+	<includeHelpInContents>true</includeHelpInContents>
+	<includeInCommandInterface>true</includeInCommandInterface>
+	<content>DocumentJournal.Продажи</content>
+	<content>DocumentJournal.Закупка</content>
+	<content>DocumentJournal.Инвентаризация</content>
+	<parentSubsystem>Subsystem.Администрирование</parentSubsystem>
 </mdclass:Subsystem>
