@@ -99,13 +99,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Subsystem.Склад.Subsystem.Журналы</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Document.РасходнаяНакладная</name>
 		<right>
 			<name>Delete</name>

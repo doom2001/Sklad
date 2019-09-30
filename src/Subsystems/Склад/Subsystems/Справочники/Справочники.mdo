@@ -8,7 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Номенклатура</content>
-  <content>Catalog.Склады</content>
   <content>Catalog.ЕдиницыИзмерения</content>
   <parentSubsystem>Subsystem.Склад</parentSubsystem>
 </mdclass:Subsystem>

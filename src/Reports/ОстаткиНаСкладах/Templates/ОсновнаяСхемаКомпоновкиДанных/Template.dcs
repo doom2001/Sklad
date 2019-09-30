@@ -70,10 +70,21 @@
 				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единица измерения</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ОстаткиТоваровОстаткиИОбороты.Склад КАК Склад,
 	ОстаткиТоваровОстаткиИОбороты.Номенклатура КАК Номенклатура,
+	ОстаткиТоваровОстаткиИОбороты.Номенклатура.ЕдИзм КАК ЕдиницаИзмерения,
 	ОстаткиТоваровОстаткиИОбороты.КоличествоНачальныйОстаток КАК НачальныйОстаток,
 	ОстаткиТоваровОстаткиИОбороты.КоличествоПриход КАК Приход,
 	ОстаткиТоваровОстаткиИОбороты.КоличествоРасход КАК Расход,
@@ -114,7 +125,7 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<value xsi:type="xs:dateTime">2019-09-30T00:00:00</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<parameter>
@@ -131,7 +142,7 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<value xsi:type="xs:dateTime">2019-09-19T00:00:00</value>
 		<useRestriction>false</useRestriction>
 		<expression>КОНЕЦПЕРИОДА(&amp;КонецПериода, "ДЕНЬ")</expression>
 	</parameter>
@@ -219,6 +230,11 @@
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
 							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЕдиницаИзмерения</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>

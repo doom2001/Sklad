@@ -7,10 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидОпераций</dataPath>
-			<field>ВидОпераций</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоПриход</dataPath>
 			<field>КоличествоПриход</field>
 		</field>
@@ -28,26 +24,45 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Регистратор</dataPath>
 			<field>Регистратор</field>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>РегистраторНомерВхДокумента</dataPath>
 			<field>РегистраторНомерВхДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вх. номер</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>РегистраторНомерИсхДокумента</dataPath>
 			<field>РегистраторНомерИсхДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исх. номер</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Склад</dataPath>
 			<field>Склад</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ОстаткиТоваровОбороты.Номенклатура КАК Номенклатура,
+	ОстаткиТоваровОбороты.Регистратор.Контрагент КАК Контрагент,
 	СУММА(ОстаткиТоваровОбороты.КоличествоПриход) КАК КоличествоПриход,
 	СУММА(ОстаткиТоваровОбороты.КоличествоРасход) КАК КоличествоРасход,
 	ОстаткиТоваровОбороты.Регистратор КАК Регистратор,
@@ -61,18 +76,8 @@
 			ТОГДА ОстаткиТоваровОбороты.Регистратор.НомерИсхДокумента
 		ИНАЧЕ NULL
 	КОНЕЦ КАК РегистраторНомерИсхДокумента
-{ВЫБРАТЬ
-	Номенклатура.*,
-	КоличествоПриход,
-	КоличествоРасход,
-	Регистратор.*,
-	РегистраторНомерВхДокумента,
-	РегистраторНомерИсхДокумента}
 ИЗ
-	РегистрНакопления.ОстаткиТоваров.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК ОстаткиТоваровОбороты
-{ГДЕ
-	ОстаткиТоваровОбороты.Номенклатура.*}
-
+	РегистрНакопления.ОстаткиТоваров.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор,) КАК ОстаткиТоваровОбороты
 СГРУППИРОВАТЬ ПО
 	ОстаткиТоваровОбороты.Номенклатура,
 	ОстаткиТоваровОбороты.Регистратор,
@@ -85,11 +90,8 @@
 		КОГДА ОстаткиТоваровОбороты.Регистратор ССЫЛКА Документ.РасходнаяНакладная
 			ТОГДА ОстаткиТоваровОбороты.Регистратор.НомерИсхДокумента
 		ИНАЧЕ NULL
-	КОНЕЦ
-
-УПОРЯДОЧИТЬ ПО
-	Номенклатура,
-	Регистратор</query>
+	КОНЕЦ,
+	ОстаткиТоваровОбороты.Регистратор.Контрагент</query>
 	</dataSet>
 	<totalField>
 		<dataPath>КоличествоПриход</dataPath>
@@ -139,18 +141,6 @@
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Номенклатура</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Регистратор</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>РегистраторНомерВхДокумента</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>РегистраторНомерИсхДокумента</dcsset:field>
-				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоПриход</dcsset:field>
 				</dcsset:item>
@@ -203,6 +193,18 @@
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Регистратор</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Контрагент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 					</dcsset:order>

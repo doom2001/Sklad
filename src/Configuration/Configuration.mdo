@@ -3,7 +3,7 @@
   <name>СкладскойУчет</name>
   <synonym>
     <key>ru</key>
-    <value>Складской учет (Мини-Склад) Отблагодарить автора можно на Яндекс-Кошелек: 4100149438463 Спасибо!</value>
+    <value>Складской учет</value>
   </synonym>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="f4404626-be64-4506-86c4-f87de55d5a7e"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="14547fad-9695-4476-b055-36f007ca498b"/>
@@ -32,12 +32,22 @@
   <subsystems>Subsystem.Склад</subsystems>
   <commonPictures>CommonPicture.склад</commonPictures>
   <commonPictures>CommonPicture.админ</commonPictures>
+  <commonPictures>CommonPicture.Принтер128</commonPictures>
+  <commonPictures>CommonPicture.Принтер32</commonPictures>
   <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
   <roles>Role.Полный</roles>
   <roles>Role.Менеджер</roles>
   <roles>Role.Склад</roles>
+  <commonTemplates>CommonTemplate.РасходнаяНакладная</commonTemplates>
+  <commonTemplates>CommonTemplate.ПриходнаяНакладная</commonTemplates>
   <commonModules>CommonModule.РаботаСоСправочниками</commonModules>
   <commonModules>CommonModule.ПолныеПрава</commonModules>
+  <commonModules>CommonModule.ПроцедурыПечати</commonModules>
+  <commonModules>CommonModule.ОбщегоНазначения</commonModules>
+  <eventSubscriptions>EventSubscription.ДокументПередЗаписью</eventSubscriptions>
+  <commonCommands>CommonCommand.Печать</commonCommands>
+  <commonForms>CommonForm.ФормаВыбораПечатнойФормы</commonForms>
+  <commonForms>CommonForm.ФормаПечати</commonForms>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.Склады</catalogs>

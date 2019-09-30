@@ -75,6 +75,17 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <attributes uuid="cef852e9-b2e1-41dc-a72f-d010871476df">
+    <name>ЕдИзм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед изм</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <dimensions uuid="bc979419-3934-4427-9660-8328d6a161c0">
     <name>Склад</name>
     <synonym>

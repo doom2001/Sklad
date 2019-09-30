@@ -17,5 +17,4 @@
   <subsystems>Покупка</subsystems>
   <subsystems>Продажи</subsystems>
   <subsystems>Склад</subsystems>
-  <subsystems>Журналы</subsystems>
 </mdclass:Subsystem>

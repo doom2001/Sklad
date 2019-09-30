@@ -159,21 +159,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВидОпераций</name>
-      <id>26</id>
+      <name>Контрагент</name>
+      <id>44</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
-      <dataPath xsi:type="form:MultiLanguageDataPath">
-        <paths xsi:type="form:DataPath">
-          <segments>Список.ВидОпераций</segments>
-        </paths>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Список.Контрагент</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВидОперацийРасширеннаяПодсказка</name>
-        <id>41</id>
+        <name>КонтрагентРасширеннаяПодсказка</name>
+        <id>46</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -187,8 +185,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВидОперацийКонтекстноеМеню</name>
-        <id>27</id>
+        <name>КонтрагентКонтекстноеМеню</name>
+        <id>45</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -196,14 +194,18 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
+      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">

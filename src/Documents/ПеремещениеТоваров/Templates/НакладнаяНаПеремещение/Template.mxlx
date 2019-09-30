@@ -204,7 +204,7 @@
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>Номенклатура</parameter>
 				</c>
 			</c>
@@ -228,22 +228,22 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>14</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>14</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>14</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>14</f>
 				</c>
 			</c>
 		</row>
@@ -335,9 +335,15 @@
 	<format>
 		<font>2</font>
 		<border>0</border>
+		<horizontalAlignment>Center</horizontalAlignment>
 	</format>
 	<format>
 		<border>0</border>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<border>0</border>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>

@@ -151,10 +151,6 @@
           <segments>Объект.Склад</segments>
         </paths>
       </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>СкладПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>СкладРасширеннаяПодсказка</name>
         <id>72</id>
@@ -281,7 +277,8 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:LabelFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
+        <width>1</width>
+        <maxWidth>1</maxWidth>
         <autoMaxHeight>true</autoMaxHeight>
       </extInfo>
     </items>
@@ -385,13 +382,14 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <readOnly>true</readOnly>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <width>5</width>
-        <autoMaxWidth>true</autoMaxWidth>
+        <width>4</width>
+        <maxWidth>4</maxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <horizontalStretch>false</horizontalStretch>
         <wrap>true</wrap>
@@ -417,10 +415,6 @@
           <segments>Объект.Товары.Количество</segments>
         </paths>
       </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ТоварыКоличествоПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ТоварыКоличествоРасширеннаяПодсказка</name>
         <id>87</id>
@@ -452,8 +446,8 @@
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
       <extInfo xsi:type="form:InputFieldExtInfo">
-        <width>6</width>
-        <autoMaxWidth>true</autoMaxWidth>
+        <width>4</width>
+        <maxWidth>5</maxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <horizontalStretch>false</horizontalStretch>
         <wrap>true</wrap>
@@ -544,10 +538,6 @@
     <handlers>
       <event>ChoiceProcessing</event>
       <name>ТоварыОбработкаВыбора</name>
-    </handlers>
-    <handlers>
-      <event>AfterDeleteRow</event>
-      <name>ТоварыПослеУдаления</name>
     </handlers>
     <searchStringAddition>
       <visible>true</visible>
@@ -829,20 +819,8 @@
     <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
-  </handlers>
-  <handlers>
-    <event>OnReopen</event>
-    <name>ПриПовторномОткрытии</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
-  </handlers>
-  <handlers>
-    <event>OnClose</event>
-    <name>ПриЗакрытии</name>
   </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -872,28 +850,6 @@
     <savedData>true</savedData>
   </attributes>
   <formCommands>
-    <name>НоваяСтрока</name>
-    <title>
-      <key>ru</key>
-      <value>Новая строка</value>
-    </title>
-    <id>1</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Новая строка</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <shortcut>F9</shortcut>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>НоваяСтрока</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
     <name>Подбор</name>
     <title>
       <key>ru</key>
@@ -914,41 +870,28 @@
     </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
-  <formCommands>
-    <name>НайтиПоАртикулу</name>
-    <title>
-      <key>ru</key>
-      <value>Найти по артикулу (F7)</value>
-    </title>
-    <id>3</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Найти по артикулу</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <shortcut>F7</shortcut>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>НайтиПоАртикулу</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel/>
-    <commandBar/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>CommonCommand.Печать</command>
+        <commandParameter xsi:type="form:DataPath">
+          <segments>Объект.Ref</segments>
+        </commandParameter>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Document.СписаниеТоваров.Command.Печать</command>
+        <commandParameter xsi:type="form:DataPath">
+          <segments>Объект.Ref</segments>
+        </commandParameter>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+    </commandBar>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
-    <handlers>
-      <event>BeforeWrite</event>
-      <name>ПередЗаписью</name>
-    </handlers>
-    <handlers>
-      <event>BeforeWriteAtServer</event>
-      <name>ПередЗаписьюНаСервере</name>
-    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>

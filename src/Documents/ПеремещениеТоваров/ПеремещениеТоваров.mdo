@@ -146,17 +146,4 @@
       <value>Накладная на перемещение</value>
     </synonym>
   </templates>
-  <commands uuid="4a9598b4-660a-42c6-9bfb-108e47f37331">
-    <name>Печать</name>
-    <synonym>
-      <key>ru</key>
-      <value>Печать</value>
-    </synonym>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.ПеремещениеТоваров</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-  </commands>
 </mdclass:Document>

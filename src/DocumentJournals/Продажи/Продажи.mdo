@@ -61,6 +61,14 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
+  <columns uuid="9d1d80a8-4867-48d7-a7ac-08940ec87b25">
+    <name>Покупатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупатель</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.Контрагент</references>
+  </columns>
   <columns uuid="cd8cbed1-71e8-462c-8960-d8d1e97e050c">
     <name>НомерИсхДокумента</name>
     <synonym>

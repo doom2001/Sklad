@@ -345,10 +345,6 @@
             <segments>Объект.Склад</segments>
           </paths>
         </dataPath>
-        <handlers>
-          <event>OnChange</event>
-          <name>СкладПриИзменении</name>
-        </handlers>
         <extendedTooltip>
           <name>СкладРасширеннаяПодсказка</name>
           <id>80</id>
@@ -607,6 +603,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <readOnly>true</readOnly>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -639,10 +636,6 @@
           <segments>Объект.Товары.Количество</segments>
         </paths>
       </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ТоварыКоличествоПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ТоварыКоличествоРасширеннаяПодсказка</name>
         <id>95</id>
@@ -728,10 +721,6 @@
     <handlers>
       <event>ChoiceProcessing</event>
       <name>ТоварыОбработкаВыбора</name>
-    </handlers>
-    <handlers>
-      <event>AfterDeleteRow</event>
-      <name>ТоварыПослеУдаления</name>
     </handlers>
     <searchStringAddition>
       <visible>true</visible>
@@ -1013,20 +1002,8 @@
     <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
-  </handlers>
-  <handlers>
-    <event>OnReopen</event>
-    <name>ПриПовторномОткрытии</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
-  </handlers>
-  <handlers>
-    <event>OnClose</event>
-    <name>ПриЗакрытии</name>
   </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
