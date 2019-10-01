@@ -26,28 +26,11 @@
 			<field>Регистратор</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>РегистраторНомерВхДокумента</dataPath>
-			<field>РегистраторНомерВхДокумента</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Вх. номер</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>РегистраторНомерИсхДокумента</dataPath>
-			<field>РегистраторНомерИсхДокумента</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Исх. номер</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Склад</dataPath>
 			<field>Склад</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Контрагент</dataPath>
@@ -59,23 +42,52 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерИсхДокумента</dataPath>
+			<field>НомерИсхДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер исх документа</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>3</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерВхДокумента</dataPath>
+			<field>НомерВхДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер вх документа</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ОстаткиТоваровОбороты.Номенклатура КАК Номенклатура,
 	ОстаткиТоваровОбороты.Регистратор.Контрагент КАК Контрагент,
+	ОстаткиТоваровОбороты.Склад,
+	ОстаткиТоваровОбороты.Регистратор КАК Регистратор,
 	СУММА(ОстаткиТоваровОбороты.КоличествоПриход) КАК КоличествоПриход,
 	СУММА(ОстаткиТоваровОбороты.КоличествоРасход) КАК КоличествоРасход,
-	ОстаткиТоваровОбороты.Регистратор КАК Регистратор,
 	ВЫБОР
 		КОГДА ОстаткиТоваровОбороты.Регистратор ССЫЛКА Документ.ПриходнаяНакладная
 			ТОГДА ОстаткиТоваровОбороты.Регистратор.НомерВхДокумента
 		ИНАЧЕ NULL
-	КОНЕЦ КАК РегистраторНомерВхДокумента,
+	КОНЕЦ КАК НомерВхДокумента,
 	ВЫБОР
 		КОГДА ОстаткиТоваровОбороты.Регистратор ССЫЛКА Документ.РасходнаяНакладная
 			ТОГДА ОстаткиТоваровОбороты.Регистратор.НомерИсхДокумента
 		ИНАЧЕ NULL
-	КОНЕЦ КАК РегистраторНомерИсхДокумента
+	КОНЕЦ КАК НомерИсхДокумента
 ИЗ
 	РегистрНакопления.ОстаткиТоваров.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор,) КАК ОстаткиТоваровОбороты
 СГРУППИРОВАТЬ ПО
@@ -91,7 +103,8 @@
 			ТОГДА ОстаткиТоваровОбороты.Регистратор.НомерИсхДокумента
 		ИНАЧЕ NULL
 	КОНЕЦ,
-	ОстаткиТоваровОбороты.Регистратор.Контрагент</query>
+	ОстаткиТоваровОбороты.Регистратор.Контрагент,
+	ОстаткиТоваровОбороты.Склад</query>
 	</dataSet>
 	<totalField>
 		<dataPath>КоличествоПриход</dataPath>
@@ -179,11 +192,9 @@
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Номенклатура</dcsset:field>
+						<dcsset:field>Склад</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
 				<dcsset:order>
@@ -195,14 +206,11 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Регистратор</dcsset:field>
+							<dcsset:field>Номенклатура</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Контрагент</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 					</dcsset:groupItems>
 					<dcsset:order>
@@ -211,6 +219,26 @@
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Регистратор</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Контрагент</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
