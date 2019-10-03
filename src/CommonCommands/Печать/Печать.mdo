@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonCommand
-	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
-	uuid="fe6b0b88-f6f3-48c0-96d7-0baa44ff4e77">
-	<name>Печать</name>
-	<synonym>
-		<key>ru</key>
-		<value>Печать</value>
-	</synonym>
-	<group>FormCommandBarImportant</group>
-	<commandParameterType>
-		<types>DocumentRef.ОприходованиеТоваров</types>
-		<types>DocumentRef.ПеремещениеТоваров</types>
-		<types>DocumentRef.СписаниеТоваров</types>
-	</commandParameterType>
-	<representation>Auto</representation>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe6b0b88-f6f3-48c0-96d7-0baa44ff4e77">
+  <name>Печать</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType>
+    <types>DocumentRef.ОприходованиеТоваров</types>
+    <types>DocumentRef.ПеремещениеТоваров</types>
+    <types>DocumentRef.СписаниеТоваров</types>
+    <types>DocumentRef.ПриходнаяНакладная</types>
+    <types>DocumentRef.РасходнаяНакладная</types>
+  </commandParameterType>
+  <representation>Auto</representation>
 </mdclass:CommonCommand>

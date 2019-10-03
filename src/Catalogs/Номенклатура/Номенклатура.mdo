@@ -1,183 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:core="http://g5.1c.ru/v8/dt/mcore"
-	xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass"
-	uuid="cf76810b-7606-484b-aa8d-e248feba272d">
-	<producedTypes>
-		<objectType typeId="a4b426da-173f-4a7f-ae37-44ba4e0792e0"
-			valueTypeId="416d7915-3c69-4a2a-a187-6df40678e027" />
-		<refType typeId="f2cd34af-a5d7-4d0b-beb6-ff1033f77008"
-			valueTypeId="2b7c5e8a-1c4e-48df-a48f-5a95e3689191" />
-		<selectionType
-			typeId="8dada349-02a7-46de-b35a-b6cd2da5557d"
-			valueTypeId="cbe9844f-9347-44ea-aaf7-cee8510bd2e4" />
-		<listType typeId="ff0365af-a3a2-4b21-bacb-2704c891a56c"
-			valueTypeId="3adbfa5d-e4d1-45f6-93eb-626a41153508" />
-		<managerType typeId="98d8704e-ba59-44fa-9ccc-dab8bc6db28f"
-			valueTypeId="aebc65ff-9f3b-48c3-9a08-1c8ea8a2ee3b" />
-	</producedTypes>
-	<name>Номенклатура</name>
-	<synonym>
-		<key>ru</key>
-		<value>Номенклатура</value>
-	</synonym>
-	<useStandardCommands>true</useStandardCommands>
-	<inputByString>Catalog.Номенклатура.StandardAttribute.Description</inputByString>
-	<inputByString>Catalog.Номенклатура.StandardAttribute.Code</inputByString>
-	<fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>PredefinedDataName</name>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>Predefined</name>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>Ref</name>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>DeletionMark</name>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>IsFolder</name>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>Owner</name>
-		<fillFromFillingValue>true</fillFromFillingValue>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fillChecking>ShowError</fillChecking>
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>Parent</name>
-		<fillFromFillingValue>true</fillFromFillingValue>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>Description</name>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fillChecking>ShowError</fillChecking>
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<standardAttributes>
-		<dataHistory>Use</dataHistory>
-		<name>Code</name>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-	</standardAttributes>
-	<createOnInput>Use</createOnInput>
-	<dataLockControlMode>Managed</dataLockControlMode>
-	<fullTextSearch>Use</fullTextSearch>
-	<objectPresentation>
-		<key>ru</key>
-		<value>Номенклатура</value>
-	</objectPresentation>
-	<hierarchical>true</hierarchical>
-	<levelCount>2</levelCount>
-	<codeLength>11</codeLength>
-	<descriptionLength>107</descriptionLength>
-	<codeAllowedLength>Variable</codeAllowedLength>
-	<checkUnique>true</checkUnique>
-	<autonumbering>true</autonumbering>
-	<defaultPresentation>AsDescription</defaultPresentation>
-	<editType>InDialog</editType>
-	<choiceMode>BothWays</choiceMode>
-	<defaultObjectForm>Catalog.Номенклатура.Form.ФормаЭлемента</defaultObjectForm>
-	<defaultListForm>Catalog.Номенклатура.Form.ФормаСписка</defaultListForm>
-	<defaultChoiceForm>Catalog.Номенклатура.Form.ФормаВыбора</defaultChoiceForm>
-	<attributes uuid="9150953c-45e6-4884-83b1-092019d99fd7">
-		<name>Услуга</name>
-		<synonym>
-			<key>ru</key>
-			<value>Услуга</value>
-		</synonym>
-		<type>
-			<types>Boolean</types>
-		</type>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<dataHistory>Use</dataHistory>
-	</attributes>
-	<attributes uuid="dfa3d398-69fe-4999-9e59-cf1e9b7e5188">
-		<name>ЕдИзм</name>
-		<synonym>
-			<key>ru</key>
-			<value>Ед изм</value>
-		</synonym>
-		<type>
-			<types>CatalogRef.ЕдиницыИзмерения</types>
-		</type>
-		<minValue xsi:type="core:UndefinedValue" />
-		<maxValue xsi:type="core:UndefinedValue" />
-		<fillChecking>ShowError</fillChecking>
-		<fillValue xsi:type="core:UndefinedValue" />
-		<fullTextSearch>Use</fullTextSearch>
-		<dataHistory>Use</dataHistory>
-	</attributes>
-	<forms uuid="15d51330-df11-4653-871b-f362a6299a30">
-		<name>ФормаЭлемента</name>
-		<synonym>
-			<key>ru</key>
-			<value>Форма элемента</value>
-		</synonym>
-		<usePurposes>PersonalComputer</usePurposes>
-		<usePurposes>MobileDevice</usePurposes>
-	</forms>
-	<forms uuid="714c3ee3-ad98-4534-841b-35ac71ab1a4f">
-		<name>ФормаСписка</name>
-		<synonym>
-			<key>ru</key>
-			<value>Форма списка</value>
-		</synonym>
-		<usePurposes>PersonalComputer</usePurposes>
-		<usePurposes>MobileDevice</usePurposes>
-	</forms>
-	<forms uuid="eddea9c5-bae3-4631-86af-41b549f2fba1">
-		<name>ФормаВыбора</name>
-		<synonym>
-			<key>ru</key>
-			<value>Форма выбора</value>
-		</synonym>
-		<usePurposes>PersonalComputer</usePurposes>
-		<usePurposes>MobileDevice</usePurposes>
-	</forms>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf76810b-7606-484b-aa8d-e248feba272d">
+  <producedTypes>
+    <objectType typeId="a4b426da-173f-4a7f-ae37-44ba4e0792e0" valueTypeId="416d7915-3c69-4a2a-a187-6df40678e027"/>
+    <refType typeId="f2cd34af-a5d7-4d0b-beb6-ff1033f77008" valueTypeId="2b7c5e8a-1c4e-48df-a48f-5a95e3689191"/>
+    <selectionType typeId="8dada349-02a7-46de-b35a-b6cd2da5557d" valueTypeId="cbe9844f-9347-44ea-aaf7-cee8510bd2e4"/>
+    <listType typeId="ff0365af-a3a2-4b21-bacb-2704c891a56c" valueTypeId="3adbfa5d-e4d1-45f6-93eb-626a41153508"/>
+    <managerType typeId="98d8704e-ba59-44fa-9ccc-dab8bc6db28f" valueTypeId="aebc65ff-9f3b-48c3-9a08-1c8ea8a2ee3b"/>
+  </producedTypes>
+  <name>Номенклатура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Номенклатура.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Номенклатура.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Номенклатура</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <codeLength>11</codeLength>
+  <descriptionLength>107</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Номенклатура.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Номенклатура.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Номенклатура.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="9150953c-45e6-4884-83b1-092019d99fd7">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуга</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dfa3d398-69fe-4999-9e59-cf1e9b7e5188">
+    <name>ЕдИзм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед изм</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="15d51330-df11-4653-871b-f362a6299a30">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="714c3ee3-ad98-4534-841b-35ac71ab1a4f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eddea9c5-bae3-4631-86af-41b549f2fba1">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9a77d956-5c7e-45b0-8282-1970bb844da2">
+    <name>ФормаПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

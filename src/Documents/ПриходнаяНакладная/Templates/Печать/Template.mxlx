@@ -2,12 +2,7 @@
 <document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<languageSettings>
 		<currentLanguage>ru</currentLanguage>
-		<defaultLanguage/>
-		<languageInfo>
-			<id>#</id>
-			<code>Язык по умолчанию</code>
-			<description>Язык по умолчанию</description>
-		</languageInfo>
+		<defaultLanguage>ru</defaultLanguage>
 		<languageInfo>
 			<id>ru</id>
 			<code>Русский</code>
@@ -153,7 +148,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приходная накладная № [Номер], от [ДеньДата]</v8:content>
+							<v8:content>Приходная накладная № [Номер] от [Дата]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -297,7 +292,6 @@
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>24</defaultFormatIndex>
 	<height>12</height>
-	<vgRows>12</vgRows>
 	<merge>
 		<r>3</r>
 		<c>2</c>
@@ -309,8 +303,6 @@
 			<type>Rows</type>
 			<beginRow>1</beginRow>
 			<endRow>1</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 			<columnsID>80dfd887-bb9e-4905-ab42-56bf3d01fa36</columnsID>
 		</area>
 	</namedItem>
@@ -320,8 +312,6 @@
 			<type>Rows</type>
 			<beginRow>10</beginRow>
 			<endRow>11</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
@@ -330,8 +320,6 @@
 			<type>Rows</type>
 			<beginRow>8</beginRow>
 			<endRow>8</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 			<columnsID>675a441a-9b0e-4060-ae88-cb6be9db37c4</columnsID>
 		</area>
 	</namedItem>
@@ -341,8 +329,6 @@
 			<type>Rows</type>
 			<beginRow>6</beginRow>
 			<endRow>7</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
@@ -351,8 +337,7 @@
 			<type>Rows</type>
 			<beginRow>3</beginRow>
 			<endRow>3</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
+			<columnsID>ed55bded-54dd-4807-a64e-8d89e3d98070</columnsID>
 		</area>
 	</namedItem>
 	<line width="1" gap="false">

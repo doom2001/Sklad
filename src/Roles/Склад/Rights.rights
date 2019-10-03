@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Rights xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://v8.1c.ru/8.2/roles" xsi:type="Rights">
+<Rights xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://v8.1c.ru/8.2/roles" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
@@ -230,17 +229,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DocumentJournal.Закупка</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>SessionParameter.ТекущийПользователь</name>
 		<right>
 			<name>Get</name>
@@ -441,13 +429,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПриходнаяНакладная.Command.Печать</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Report.ОстаткиНаСкладах</name>
 		<right>
 			<name>Use</name>
@@ -496,17 +477,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DocumentJournal.Продажи</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Configuration.СкладскойУчет</name>
 		<right>
 			<name>ThinClient</name>
@@ -542,24 +512,6 @@
 		</right>
 		<right>
 			<name>Output</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DocumentJournal.Инвентаризация</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.РасходнаяНакладная.Command.Печать</name>
-		<right>
-			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -849,17 +801,6 @@
 		</right>
 		<right>
 			<name>ReadDataHistoryOfMissingData</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>DocumentJournal.Перемещения</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
